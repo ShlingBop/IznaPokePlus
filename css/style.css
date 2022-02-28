@@ -143,7 +143,7 @@
 }
 
 .salmonPicture {
-  background-image: url("/img/salmonBowlNew.JPG");
+  background-image: url("../img/salmonBowlNew.JPG");
   background-repeat: no-repeat;
   background-position: 80%;
   background-size: contain;
@@ -182,7 +182,7 @@
 }
 
 .pokePlusLogoCarousel {
-  background-image: url('img\Logo.JPG');
+  background-image: url('../img/Logo.JPG');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
