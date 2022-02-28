@@ -1,0 +1,481 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* header */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+  margin: auto 1%;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  
+}
+.carousel {
+  height: 100vh;
+  position: relative;
+ 
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 100ms;
+  
+}
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.salmonPicture {
+  background-image: url('/img/Salmon\ Bowl\ New.png');
+  background-repeat: no-repeat;
+  background-position: 80%;
+  background-size: contain;
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8%;
+  overflow: hidden;
+  
+}
+.salmonPicture h2 {
+  font-size: 3rem;
+  width: 100%;
+  
+}
+
+.salmonPicture p {
+  width: 100%;
+  margin: 5% 0 0 10%;
+  font-size: 2rem;
+}
+
+.salmonPicture p a {
+  text-decoration: none;
+  color:white;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 3%;
+}
+
+.salmonPicture p a:hover {
+  background-color: rgba(0,0,0,.2);;
+  color:black;
+}
+
+.pokePlusLogoCarousel {
+  background-image: url('/img/Logo.JPG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transition: 0 opacity ease;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding:0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0,0,0,.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev{
+  left:1rem;
+}
+.carousel-button.next{
+  right:1rem;
+}
+
+
+
+/* Menu signiture bowl section*/
+
+.headerMenu {
+  text-align: center;
+}
+.order{
+  position: absolute;
+  top: 86%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 2;
+  text-align: end;
+  cursor: pointer;
+  font-size:1.2rem;
+}
+
+.order a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:white;
+}
+
+.order:hover {
+  background-color: black;
+  font-size: 1.4rem;
+  transition: all 0.3s ease 0s;
+}
+
+.subHeading {
+  display: flex;
+  justify-content: center;
+}
+section h2 {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+  margin: 0 2%;
+  height: 50px;
+  border-radius: 5px 5px 0px 0px;
+  padding: 0 20px;
+}
+
+.menuBackgroundColor {
+  background-color: rgb(246,60,73);
+}
+
+.pointer {
+	cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.pointer:hover {
+  color: rgba(255, 0, 0, 0.9);
+  background-color:rgba(97, 97, 85, 0.075);
+  font-size: 1.4rem;
+}
+
+/* PokeBowl section */
+
+.bowls {
+	width: 25%;
+	margin: 2%;
+	padding: 1%;
+	border-radius: 5px;
+	text-align: center;
+	background-color: rgb(248, 248, 246);
+  animation: transitionIn 0.75s
+}
+
+.pokeBowls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.sauce li {
+	list-style: none;
+	text-align: start;
+}
+
+.sideMenu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hidden{
+	display: none !important;
+}
+
+.deliveryCompanies{
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deliveryCompanies h2 {
+  width: 100%;
+}
+
+.deliveryCompanies ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  animation: transitionIn 0.75s
+  
+}
+
+.delivery img{
+  width: 200px;
+  
+}
+
+
+
+.about {
+  text-align: center;
+}
+
+.about p {
+  border-radius: 50px;
+  width: 50%;
+  margin: 5% auto;
+  line-height: 1.8rem;
+  background-color: rgb(248, 248, 246);
+  padding: 5%;
+}
+
+.about p a {
+  text-decoration: none;
+  color:blue;
+  font-weight: 600;
+}
+
+.gallery h1 {
+  width: 100%;
+}
+
+.gallery {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  width: 19%;
+  margin: 3%;
+}
+
+.gallery img {
+ width: 100%;
+ animation: transitionIn 0.75s
+}
+.gallery .beef {
+  width: 200px;
+}
+
+.gallery .insta {
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.gallery .insta a {
+  text-decoration: none;
+  color: black;
+}
+
+.gallery .insta a:hover {
+  font-size: 2rem;
+}
+
+
+
+/*footer */
+
+/* footer section*/
+
+footer {
+  width: 100%;
+  font-size:20px;
+  display: flex;
+  background-color: #333;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.hours, .phoneNumber, .waterloo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 5%;
+
+}
+
+
+.phoneNumber li {
+  text-align: center;
+  line-height: 1.6rem;
+ 
+}
+.waterloo {
+  padding: 1.5% 5%;
+}
+
+footer li {
+  list-style: none;
+}
+
+.phoneNumber li a,
+.waterloo a {
+  color: white;
+  text-decoration: none;
+
+}
+
+footer h5 {
+  font-size: 1.6rem;
+}
+
+.copyright {
+  margin-top: 5%;
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+  .waterloo, .hours {
+      display: none;
+  }
+
+  .phoneNumber {
+      width: 100%;
+  }
+}
