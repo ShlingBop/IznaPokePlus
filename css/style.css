@@ -120,6 +120,7 @@
  
 }
 
+
 .carousel>ul {
   margin: 0;
   padding: 0;
@@ -289,7 +290,7 @@ section h2 {
 }
 
 .headerMenu {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 
@@ -338,15 +339,26 @@ section h2 {
     font-size: 1.6rem;
 
   }
+  
+}
+
+@media screen and (max-width: 1600px) {
+  .sauce {
+    width: 50%;
+  }
 }
 
 .sauce {
-  width: 20%;
+  width: 50%;
 }
 
 .sauce li {
 	list-style: none;
-	text-align: start;
+	text-align: center;
+  position: relative;
+  right: 1.3rem;
+  
+  
 }
 
 .sideMenu {
