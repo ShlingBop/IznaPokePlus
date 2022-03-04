@@ -285,13 +285,15 @@ section h2 {
 
 @media screen and (max-width: 700px) {
   section h2 {
-    width: 30%;
+    width: 10rem;
+    margin: 0 2%;
+    padding: 0 10px;
   }
 
 }
 
 .headerMenu {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 
@@ -404,8 +406,15 @@ section h2 {
 
 .delivery img{
   width: 200px;
+  margin: 2%;
 }
 
+@media screen and (max-width: 700px) {
+  .deliveryCompanies ul {
+    position: relative;
+    right: 25px; 
+  }
+}
 
 
 .about {
