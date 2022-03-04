@@ -296,13 +296,6 @@ section h2 {
   font-size: 1rem;
 }
 
-
-.menuBackgroundColor {
-  background-color: rgb(246,60,73);
-}
-
-
-
 .pointer {
 	cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -327,6 +320,7 @@ section h2 {
   animation: transitionIn 0.75s;
   font-size: 1.3rem;
   line-height: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .pokeBowls {
@@ -460,11 +454,13 @@ section h2 {
 
 .insta {
   font-size: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .insta a {
   text-decoration: none;
   color: black;
+  
 }
 
 .insta a:hover {
@@ -480,22 +476,28 @@ section h2 {
 
 }
 
-
-
 .hours {
+  width: 50%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.hours h2{
-  width: 100%;
-  margin: 5%;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin-top: 5%;
 }
 
-.days {
+.hours h2 {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.hours span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.days {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 3%;
@@ -507,6 +509,10 @@ section h2 {
   justify-content: center;
   padding: 5%;
   text-align: center;
+
+  width: 50%;
+  margin: 5% auto;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .location h2 {
   width: 100%;
