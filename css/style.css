@@ -278,9 +278,9 @@ section h2 {
 	width: 20%;
 	text-align: center;
   margin: 0 5%;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px;
   padding: 0 20px;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -305,7 +305,7 @@ section h2 {
 .pointer:hover {
   color: rgba(255, 0, 0, 0.9);
   background-color:rgba(97, 97, 85, 0.075);
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 
 /* PokeBowl section */
@@ -416,7 +416,7 @@ section h2 {
 }
 
 .about p {
-  border-radius: 50px;
+  border-radius: 5px;
   width: 80%;
   margin: 0 auto;
   line-height: 1.8rem;
