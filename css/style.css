@@ -120,6 +120,16 @@
  
 }
 
+/* First Section CSS*/
+
+.firstSection {
+  display: flex;
+}
+
+.firstSection section img {
+  width: 40rem;
+}
+
 
 
 .carousel>ul {
@@ -333,6 +343,11 @@ section h2 {
 	
 }
 
+.bowls img {
+  width: 20rem;
+  margin: 2%;
+}
+
 @media screen and (max-width: 700px) {
   .bowls {
     width: 100%;
@@ -418,21 +433,32 @@ section h2 {
   }
 }
 
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+}
+
 
 .about {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+ 
 }
 
 .about p {
   border-radius: 5px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  line-height: 1.8rem;
   background-color: rgb(248, 248, 246);
   padding: 5%;
-  font-size: 2rem;
-  line-height: 5rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
 
 .about p a {
