@@ -124,10 +124,14 @@
 
 .firstSection {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .firstSection section img {
-  width: 40rem;
+  max-width: 100%;
+  height: auto;
+
 }
 
 
@@ -569,6 +573,10 @@ section h2 {
   .hours, .location, .about .insta {
     width: 80%;
   }
+
+  .call {
+    margin-bottom: -10rem;
+  }
 }
 /*footer */
 
@@ -598,6 +606,7 @@ footer div {
 .copyright {
   width: 100%;
 }
+
 
 
 
